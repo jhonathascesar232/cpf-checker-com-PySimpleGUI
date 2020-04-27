@@ -11,7 +11,7 @@ class Tela:
 
         # layout
         lay = [
-            [sg.Text('Ex: "123.456.789-00"', justification='right', pad=(l))],
+            [sg.Text('Ex: "123.456.789-00"', pad=(l))],
             [sg.Text('CPF:'), sg.InputText(key='cpf')],
             [sg.Button('Check', key='checker'), sg.Text(' '*20, key='validador', pad=(v))],
         ]

@@ -5,11 +5,15 @@ class Tela:
 
     def __init__(self):
         sg.change_look_and_feel('Black')
+        #   (left, right),(top, bottom)
+        l = [(130,1),(1,1)]
+        v = [(100,1),(1,1)]
 
         # layout
         lay = [
+            [sg.Text('Ex: "123.456.789-00"', justification='right', pad=(l))],
             [sg.Text('CPF:'), sg.InputText(key='cpf')],
-            [sg.Button('Check', key='checker'), sg.Text(' '*20, key='validador')],
+            [sg.Button('Check', key='checker'), sg.Text(' '*20, key='validador', pad=(v))],
         ]
 
         self.jan = sg.Window('CPF Checker').layout(lay)

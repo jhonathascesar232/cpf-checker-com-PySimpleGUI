@@ -99,7 +99,3 @@ def isCnpjValid(cnpj):
     if cpf[-2:] == "%s%s" % (firstVerifyingDigit,secondVerifyingDigit):
         return True
     return False
-
-
-
-# print(isCpfValid("080.590.533-29"))
